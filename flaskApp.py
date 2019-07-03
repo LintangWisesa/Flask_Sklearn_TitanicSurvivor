@@ -1,4 +1,4 @@
-from flask import Flask, request, jsonify
+from flask import Flask, request, jsonify, render_template
 import joblib
 
 app = Flask(__name__)
@@ -6,7 +6,7 @@ app = Flask(__name__)
 # home route
 @app.route('/')
 def home():
-    return '<h1>Welcome!</h1>'
+    return render_template('welcome.html')
 
 # POST 12 vars to titanic model
 @app.route('/postTitanic12', methods = ['GET', 'POST'])
