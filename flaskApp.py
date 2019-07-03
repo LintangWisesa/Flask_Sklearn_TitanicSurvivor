@@ -28,7 +28,12 @@ def postTitanic():
         fare = body['fare']
         adultman = body['adultman']
         alone = body['alone']
+        prediksi = model.predict([[
+            female, male, child, man, woman, pclass, age, 
+            sibsp, parch, fare, adultman, alone
+        ]])[0]
 
+        print(prediksi)
         return jsonify({
             '0response' : 'POST successful!', 
             'female' : body['female'],
@@ -43,6 +48,7 @@ def postTitanic():
             'fare' : body['fare'],
             'adultman' : body['adultman'],
             'alone' : body['alone'],
+            'zPREDIKSI': int(prediksi)
         })
 
 if __name__ == '__main__':
