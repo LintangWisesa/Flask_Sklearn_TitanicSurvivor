@@ -44,11 +44,11 @@
         }
     ```
 
-3. Go to GET __http://localhost:1234/prediksi__ then you will be redirected to its prediction page, where you can try to predict a profile. Insert __sex__, __class__, __age__, __siblings__, __parents__ & __fare__ then click "Predict" button.
+3. Go to GET __http://localhost:1234/prediksi__ then you will be redirected to its prediction page, where you can try to predict a profile. Insert __sex__, __class__, __age__, __siblings__, __parents__ & __fare__ then click __Predict__ button.
 
     ![predict](./screenshot/predict.png)
 
-    The result will be shown on __http://localhost:1234/prediksi__:
+    The result will be shown on __http://localhost:1234/hasil__:
 
     ![result](./screenshot/result.png)
 
