@@ -5,19 +5,30 @@
 </head>
 <body style="margin: 30px">
     <h2>Titanic Survivor 🗻💥🚢 Predict Page</h2>
+    <table>
+        <tr>
+            <td style="font-size: 20px; width: 150px" >Female: {{ hasil.female }}</td>
+            <td style="font-size: 20px; width: 150px">Male: {{ hasil.male }}</td>
+            <td style="font-size: 20px; width: 150px">Child: {{ hasil.child }}</td>
+        </tr>
+        <tr>
+            <td style="font-size: 20px">Man: {{ hasil.man }}</td>
+            <td style="font-size: 20px">Woman: {{ hasil.woman }}</td>
+            <td style="font-size: 20px">Class: {{ hasil.pclass }}</td>
+        </tr>
+        <tr>
+            <td style="font-size: 20px">Age: {{ hasil.age }}</td>
+            <td style="font-size: 20px">Siblings: {{ hasil.sibsp }}</td>
+            <td style="font-size: 20px">Parents: {{ hasil.parch }}</td>
+        </tr>
+        <tr>
+            <td style="font-size: 20px">Fare: {{ hasil.fare }}</td>
+            <td style="font-size: 20px">Adult Man: {{ hasil.adultman }}</td>
+            <td style="font-size: 20px">Alone: {{ hasil.alone }}</td>
+        </tr>
+    </table>
 
-    <p style="font-size: 20px">Female: {{ hasil.female }}</p>
-    <p style="font-size: 20px">Male: {{ hasil.male }}</p>
-    <p style="font-size: 20px">Child: {{ hasil.child }}</p>
-    <p style="font-size: 20px">Man: {{ hasil.man }}</p>
-    <p style="font-size: 20px">Woman: {{ hasil.woman }}</p>
-    <p style="font-size: 20px">Class: {{ hasil.pclass }}</p>
-    <p style="font-size: 20px">Age: {{ hasil.age }}</p>
-    <p style="font-size: 20px">Siblings: {{ hasil.sibsp }}</p>
-    <p style="font-size: 20px">Parents: {{ hasil.parch }}</p>
-    <p style="font-size: 20px">Fare: {{ hasil.fare }}</p>
-    <p style="font-size: 20px">Adult Man: {{ hasil.adultman }}</p>
-    <p style="font-size: 20px">Alone: {{ hasil.alone }}</p>
-    <p style="font-size: 20px">PREDIKSI: {{ hasil.PREDIKSI }}</p>
+    <h3 style="font-size: 20px">PREDIKSI: {{ hasil.PREDIKSI }}</h3>
+    
 </body>
 </html>
