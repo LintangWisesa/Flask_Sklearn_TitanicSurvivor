@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Titanic 🗻💥🚢</title>
+</head>
+<body style="margin: 30px">
+    <h2>Titanic Survivor 🗻💥🚢 Predict Page</h2>
+    <form action="http://localhost:1234/hasil" method="POST"
+    style="margin-left: 30px">
+        
+        <br>Sex:
+        <select name="sex">
+            <option value="0">Female ♀</option>
+            <option value="1">Male‍ ♂</option>
+            <option selected hidden></option>
+        </select>
+        
+        <br><br>Class:
+        <select name="pclass">
+            <option value="1">1st Class</option>
+            <option value="2">2nd Class</option>
+            <option value="3">3rd Class</option>
+            <option selected hidden></option>
+        </select>
+
+        <br><br>Age:
+        <input name="age" placeholder="Insert age..." type="number" 
+        min="0" max="100" style="width: 100px"/>
+
+        <br><br>Siblings:
+        <input name="sibsp" placeholder="Insert siblings..." type="number" 
+        min="0" max="100" style="width: 100px"/>
+
+        <br><br>Parents:
+        <input name="parch" placeholder="Insert parents..." type="number" 
+        min="0" max="100" style="width: 100px"/>
+
+        <br><br>Fare:
+        <input name="fare" placeholder="Insert fare..." type="number" 
+        min="0" style="width: 100px"/>
+
+        <br><br>
+        <input type="submit" value="PREDICT">
+
+    </form>
+</body>
+</html>
