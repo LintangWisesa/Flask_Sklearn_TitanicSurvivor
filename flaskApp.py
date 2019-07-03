@@ -51,12 +51,17 @@ def hasil():
             sibsp, parch, fare, adultman, alone
         ]])[0]
 
+        if int(prediksi) == 0:
+            kesimpulan = 'You\'re dead!'
+        else:
+            kesimpulan = 'You will be saved!'
+
         dataHasil = {
             'female': female, 'male': male, 'child': child, 
             'man': man, 'woman': woman, 'pclass': pclass, 
             'age': age, 'sibsp': sibsp, 'parch': parch, 
             'fare': fare, 'adultman': adultman, 'alone': alone,
-            'PREDIKSI': int(prediksi)
+            'PREDIKSI': kesimpulan
         }
 
         return render_template('hasil.html', hasil=dataHasil)
